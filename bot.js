@@ -1,5 +1,5 @@
 const TelegramBot = require("node-telegram-bot-api");
-const token = "5077680794:AAEzwGRTRcL0pUigkbQ-qkosWxfa_p2a9cc";
+const token = "6849453682:AAHW7tLLm92-JaMsOcQvJsKJmwHPVmIOhjY";
 const bot = new TelegramBot(token, { polling: true });
 
 bot.on("message", (msg) => {
@@ -18,7 +18,7 @@ bot.on("message", (msg) => {
         `Murojaatingiz qabul qilindi. Tez orada javob beramiz.`
       );
 
-      const adminGroupId = "-1002066855228";
+      const adminGroupId = "-1002014716482";
 
       bot.forwardMessage(adminGroupId, chatId, msg.message_id);
 
